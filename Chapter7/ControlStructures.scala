@@ -27,3 +27,26 @@ def example2(args: Array[String]): String = {
 
 println("Exampe2")
 println(example2(args))
+
+// While loops, just as in other languages, have a condition and a body.
+// The body will execute continuously until the condition is false.
+
+def gcdLoop(x: Long, y: Long): Long = {
+  var a = x
+  var b = y
+  while (a != 0) {
+    val temp = a
+    a = b % a
+    b = temp
+  }
+  b
+}
+
+// Do - While loops runs the body and then tests the condition.  This means
+// the body of the code will always run at least 1 time.
+
+var line = ""
+do {
+  line = readline()
+  println("Read: " + line )
+} while (link != "")
